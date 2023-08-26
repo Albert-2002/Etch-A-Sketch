@@ -12,3 +12,18 @@ for (let i = 0; i < 16; i++) {
     gridContainer.appendChild(gridRow);
 }
     
+const items = Array.from(document.querySelectorAll('#itemgrid'));
+//console.log(items);
+
+items.forEach((items) => {
+    items.addEventListener('mousemove', () => {
+        const randomColor = getRandomColor();
+        items.style.backgroundColor = randomColor;
+    });
+})
+
+function getRandomColor() {
+    let color = '#000000';
+    return color;
+}
+

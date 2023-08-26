@@ -4,7 +4,7 @@
 }  
 
 #gridContainer {
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 #itemgrid {
@@ -15,9 +15,7 @@
 
 #rowgrid {
     display: flex;
-    margin-left: 705px;
-    margin-right: 705px;
-    /* margin-right: 500px; */
+    margin-left: 700px;
 }
 
 #rowgrid div {
@@ -34,8 +32,19 @@
 
 #sizer {
     display: inline;
+    background-color: lightgray;
+    margin-left: 45px;
 }
 
 #menu {
     text-align: center;
 }
+
+#menu button {
+    background-color: lightgray;
+}
+
+#menu span {
+    background-color: lightgray;
+}
+
