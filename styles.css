@@ -1,7 +1,41 @@
-* {
-    border: 2px dotted red; 
+  * {
+    /* border: 2px dotted rebeccapurple;  */
+    background-color: rgb(17,24,39);
+}  
+
+#gridContainer {
+    margin-top: 200px;
 }
 
 #itemgrid {
     display: inline;
+    border: 1px dotted black;
+    
+}
+
+#rowgrid {
+    display: flex;
+    margin-left: 705px;
+    margin-right: 705px;
+    /* margin-right: 500px; */
+}
+
+#rowgrid div {
+    background: peachpuff;
+    height: 30px;
+    width: 30px;
+    /*flex: 1;*/ 
+  }
+
+  h1 {
+    text-align: center;
+    color: aqua;
+  }
+
+#sizer {
+    display: inline;
+}
+
+#menu {
+    text-align: center;
 }
