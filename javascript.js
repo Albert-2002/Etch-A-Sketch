@@ -13,17 +13,30 @@ for (let i = 0; i < 16; i++) {
 }
     
 const items = Array.from(document.querySelectorAll('#itemgrid'));
-//console.log(items);
+let isLeftClicking = false;
 
-items.forEach((items) => {
-    items.addEventListener('mousemove', () => {
-        const randomColor = getRandomColor();
-        items.style.backgroundColor = randomColor;
+items.forEach((item) => {
+    item.addEventListener('mousedown', (e) => {
+        if (e.button === 0) { // Check if left mouse button is clicked (button code 0)
+            isLeftClicking = true;
+            const randomColor = getRandomColor();
+            item.style.backgroundColor = randomColor;
+        }
     });
-})
+
+    item.addEventListener('mousemove', () => {
+        if (isLeftClicking) {
+            const randomColor = getRandomColor();
+            item.style.backgroundColor = randomColor;
+        }
+    });
+
+    item.addEventListener('mouseup', () => {
+        isLeftClicking = false;
+    });
+});
 
 function getRandomColor() {
     let color = '#000000';
     return color;
-}
-
+};
