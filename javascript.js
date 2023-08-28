@@ -40,3 +40,12 @@ function getRandomColor() {
     let color = '#000000';
     return color;
 };
+
+const clrbtn = document.querySelector('#clear');
+//console.log(clrbtn);
+
+clrbtn.addEventListener('click', () => {
+    items.forEach((item) => {
+        item.style.backgroundColor = '#ffdab9';
+    })
+})
