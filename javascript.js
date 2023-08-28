@@ -49,3 +49,4 @@ clrbtn.addEventListener('click', () => {
         item.style.backgroundColor = '#ffdab9';
     })
 })
+

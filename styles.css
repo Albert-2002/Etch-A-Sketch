@@ -48,3 +48,15 @@
     background-color: lightgray;
 }
 
+#clear {
+    height: 35px;
+    width: 100px;
+    font-weight: bold;
+}
+
+#plus,#minus {
+    height: 35px;
+    width: 35px;
+    font-weight: bold;
+}
+
