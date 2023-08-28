@@ -1,3 +1,3 @@
-Etch A Sketch from The Odin Project.
+# Etch A Sketch from The Odin Project.
 
-The Canvas resize option doesn't work lol.
+The canvas resize options don't work lol.
